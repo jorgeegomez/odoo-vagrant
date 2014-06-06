@@ -86,7 +86,7 @@ vcsrepo { "/vagrant/odoo":
   ensure => latest,
   provider => git,
   source => 'https://github.com/odoo/odoo.git',
-  revision => 'master',
+  revision => 'saas-5',
 }
 
 file { "/home/vagrant/odoo":
