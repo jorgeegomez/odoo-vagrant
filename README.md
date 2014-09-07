@@ -1,15 +1,15 @@
 odoo-vagrant
 ============
 
-Definición de una máquina virtual Vagrant para ejecutar ODOO (ex OpenERP) en modo desarrollo.
+Definición de una máquina virtual Vagrant para ejecutar Odoo (antes OpenERP) en modo desarrollo.
 
 Pasos para poder utilizarla:
 * Instalar VirtualBox [https://www.virtualbox.org/wiki/Downloads]
-* Instalar Vagrand [https://www.vagrantup.com/downloads.html]
+* Instalar Vagrant [https://www.vagrantup.com/downloads.html]
 * Clonar este repositorio
-* En caso de tener una copia local de la rama de odoo [https://github.com/odoo/odoo.git], copiarla/moverla a la carpeta del repositiorio. Sino, se bajará automáticamente durante la instalación
+* En caso de tener una copia local de la rama de Odoo [https://github.com/odoo/odoo.git], copiarla/moverla a la carpeta del repositiorio. Sino, se bajará automáticamente durante la instalación
 * Abrir una consola en la carpeta del repositorio y ejecutar `vagrant up`
-* Esperar a que se baje el archivo de la VM (por defecto la instalación se realiza sobre un ubuntu/trusty64-clouding) y se instalen y configuren todos los paquetes correspondientes.
+* Esperar a que se baje el archivo de la VM (por defecto la instalación se realiza sobre ubuntu/trusty64-cloudimg) y se instalen y configuren todos los paquetes correspondientes.
 * Al finalizar la instalación, se puede acceder a la VM mediante `vagrant ssh` en esta misma carpeta.
 * usuario y password por defecto = 'vagrant'
 * Abrir la carpeta /home/vagrant/oodo y ejecutar `python ./openerp-server -s --db_user=odoo --db_password=odoo --db_host=localhost --addons-path=addons`
